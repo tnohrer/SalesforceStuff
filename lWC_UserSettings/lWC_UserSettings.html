@@ -1,0 +1,42 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_medium">
+            <lightning-input type="toggle" label="Enable Dark Mode" onchange={toggleDarkMode}></lightning-input>
+            <br>
+            
+            <div class="settings-section">
+                <h2>Font Settings</h2>
+                <lightning-combobox label="Font Size" value={fontSize} options={fontSizeOptions} onchange={handleFontSizeChange}></lightning-combobox>
+                <lightning-combobox label="Font Type" value={fontType} options={fontTypeOptions} onchange={handleFontTypeChange}></lightning-combobox>
+                <lightning-combobox label="Font Style" value={fontStyle} options={fontStyleOptions} onchange={handleFontStyleChange}></lightning-combobox>
+                <lightning-input type="color" label="Font Color" value={fontColor} onchange={handleFontColorChange}></lightning-input>
+                <br>
+                <lightning-button class="slds-m-right_small" label="Apply Changes" onclick={applyFontSettings}></lightning-button>
+                <lightning-button label="Revert" onclick={revertChanges}></lightning-button>
+            </div>
+            <div class="settings-section">
+                <h2>Page Background Color</h2>
+                <lightning-input type="color" label="Page Background Color" value={pageBgColor} onchange={handlePageBgColorChange}></lightning-input>
+                <br>
+                <lightning-button class="slds-m-right_small" label="Apply Changes" onclick={applyPageBgColor}></lightning-button>
+                <lightning-button label="Revert" onclick={revertChanges}></lightning-button>
+            </div>
+            <div class="settings-section">
+                <h2>Global Header Background</h2>
+                <lightning-input type="color" label="Global Header Background" value={globalHeaderBgColor} onchange={handleGlobalHeaderBgColorChange}></lightning-input>
+                <lightning-input type="color" label="Global Header Icon Color" value={globalHeaderIconColor} onchange={handleGlobalHeaderIconColorChange}></lightning-input>
+                <br>
+                <lightning-button class="slds-m-right_small" label="Apply Changes" onclick={applyGlobalHeaderBgColor}></lightning-button>
+                <lightning-button class="slds-m-right_small" label="Apply Icon Color" onclick={applyGlobalHeaderIconColor}></lightning-button>
+                <lightning-button label="Revert" onclick={revertChanges}></lightning-button>
+            </div>
+            <div class="settings-section">
+                <h2>Brand Color</h2>
+                <lightning-input type="color" label="Brand Color" value={brandColor} onchange={handleBrandColorChange}></lightning-input>
+                <br>
+                <lightning-button class="slds-m-right_small" label="Apply Changes" onclick={applyBrandColor}></lightning-button>
+                <lightning-button label="Revert" onclick={revertChanges}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

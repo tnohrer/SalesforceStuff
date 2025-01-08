@@ -1,0 +1,279 @@
+:host {
+    --font-size: 16px; /* $font-size-5 */
+    --font-type: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; /* $font-family */
+    --font-style: normal; /* Default to normal */
+    --font-color: #181818; /* $color-text-default */
+    --page-bg-color: #f3f3f3; /* $color-background */
+    --global-header-bg-color: #ffffff; /* $color-background-alt */
+    --brand-color: #1b96ff; /* $color-text-brand */
+    font-size: var(--font-size);
+    font-family: var(--font-type);
+    font-style: var(--font-style);
+    color: var(--font-color);
+    background-color: var(--page-bg-color);
+}
+
+.settings-section {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+/*NEW STYLES*/
+/* Combo boxes and drop-down lists */
+body.dark-mode lightning-combobox .slds-combobox__input,
+body.dark-mode lightning-combobox .slds-input_faux,
+body.dark-mode lightning-combobox .slds-combobox__input-value {
+    background: rgb(20, 20, 20) !important;
+    color: #fff !important;
+}
+
+
+
+/* Panel headers */
+body.dark-mode .panel-header,
+body.dark-mode .slds-utility-panel__header,
+body.dark-mode .slds-grid,
+body.dark-mode .slds-media,
+body.dark-mode .slds-media__figure,
+body.dark-mode .slds-media__body,
+body.dark-mode .slds-col_bump-left,
+body.dark-mode .oneUtilityBarPanel {
+    background: rgb(20, 20, 20) !important;
+    color: #fff !important;
+}
+
+
+/*End New Styles*/
+
+/* Styles for global header and brand elements */
+.global-header {
+    background-color: var(--global-header-bg-color) !important;
+}
+
+.brand-element {
+    color: var(--brand-color) !important;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: rgb(20, 20, 20) !important;
+    color: #fff !important;
+}
+
+body.dark-mode .slds-card,
+body.dark-mode .slds-button,
+body.dark-mode .slds-input,
+body.dark-mode .slds-modal__container,
+body.dark-mode .slds-modal__header,
+body.dark-mode .slds-modal__content,
+body.dark-mode .slds-modal__footer,
+body.dark-mode .slds-dashboards,
+body.dark-mode .slds-screen-component,
+body.dark-mode .slds-page-header,
+body.dark-mode .slds-tabs_default__item,
+body.dark-mode .slds-report,
+body.dark-mode .slds-utility-bar,
+body.dark-mode .grid-layout,
+body.dark-mode .dashboardHeader,
+body.dark-mode .slds-page-header__row,
+body.dark-mode .slds-page-header__col-title,
+body.dark-mode .slds-media,
+body.dark-mode .slds-media__figure,
+body.dark-mode .slds-icon_container,
+body.dark-mode .slds-icon-standard-dashboard,
+body.dark-mode .flowRuntimeForFlexipage,
+body.dark-mode .flowruntimeBody,
+body.dark-mode .flowruntime-input,
+body.dark-mode .flowruntime-input-label,
+body.dark-mode .flowruntime-input-wrapper2,
+body.dark-mode .flowruntime-navigation-bar,
+body.dark-mode .flowruntime-lwc-body,
+body.dark-mode .flowruntime-list-container,
+body.dark-mode .flowruntime-base-section,
+body.dark-mode .flowruntime-screen-field,
+body.dark-mode .flowruntime-lwc-field,
+body.dark-mode .flowruntime-flow-screen-input,
+body.dark-mode .flowruntime-lwc-field .container,
+body.dark-mode .flowruntime-lwc-field .slds-m-bottom_x-small,
+body.dark-mode .flowruntime-lwc-field .slds-form-element,
+body.dark-mode .flowruntime-lwc-field .slds-form-element__label,
+body.dark-mode .flowruntime-lwc-field .slds-rich-text-editor__output,
+body.dark-mode .flowruntime-lwc-field .slds-form-element__control,
+body.dark-mode .flowruntime-lwc-field .slds-input,
+body.dark-mode .flowruntime-lwc-field .slds-form-element__help,
+body.dark-mode .flowruntime-lwc-field .slds-button_brand,
+body.dark-mode .homeRecentRecordContainer,
+body.dark-mode .homeHomeCard,
+body.dark-mode .forceBaseCard,
+body.dark-mode .recentsRecordCardList,
+body.dark-mode .recentsRecordCardRow,
+body.dark-mode .homeRecentsItemStencil,
+body.dark-mode .iconContainer,
+body.dark-mode .forceEntityIcon,
+body.dark-mode .primaryField,
+body.dark-mode .outputLookupContainer,
+body.dark-mode .outputLookupLink,
+body.dark-mode .viewAllLink,
+body.dark-mode .viewAllLabel,
+body.dark-mode .az0-org-limits,
+body.dark-mode .slds-box,
+body.dark-mode .slds-theme_default,
+body.dark-mode .lightning-progress-bar,
+body.dark-mode .slds-progress-bar,
+body.dark-mode .slds-progress-bar__value,
+body.dark-mode .slds-assistive-text,
+body.dark-mode .slds-global-header,
+body.dark-mode .slds-global-header__item,
+body.dark-mode .slds-global-header__logo,
+body.dark-mode .slds-global-header__item_search,
+body.dark-mode .slds-global-header__item_action,
+body.dark-mode .slds-global-actions__item,
+body.dark-mode .slds-global-actions__favorites,
+body.dark-mode .slds-global-actions__favorites-action,
+body.dark-mode .slds-global-actions__favorites-more,
+body.dark-mode .slds-global-actions__task,
+body.dark-mode .slds-global-actions__help,
+body.dark-mode .slds-global-actions__setup,
+body.dark-mode .slds-global-actions__notifications,
+body.dark-mode .slds-global-actions__avatar,
+body.dark-mode .slds-global-actions__item-action,
+body.dark-mode .slds-context-bar__primary,
+body.dark-mode .slds-context-bar__item,
+body.dark-mode .slds-context-bar__icon-action,
+body.dark-mode .slds-context-bar__label-action,
+body.dark-mode .slds-context-bar__app-name,
+body.dark-mode .slds-context-bar__object-switcher,
+body.dark-mode .slds-context-bar__item--divider-right,
+body.dark-mode .slds-context-bar_dropdown-trigger,
+body.dark-mode .slds-dropdown-trigger,
+body.dark-mode .slds-dropdown-trigger--click,
+body.dark-mode .slds-no-hover,
+body.dark-mode .slds-context-bar__button,
+body.dark-mode .slds-icon-waffle_container,
+body.dark-mode .slds-icon-waffle,
+body.dark-mode .slds-r1,
+body.dark-mode .slds-r2,
+body.dark-mode .slds-r3,
+body.dark-mode .slds-r4,
+body.dark-mode .slds-r5,
+body.dark-mode .slds-r6,
+body.dark-mode .slds-r7,
+body.dark-mode .slds-r8,
+body.dark-mode .slds-r9,
+body.dark-mode .slds-context-bar__label-action,
+body.dark-mode .slds-context-bar__app-name,
+body.dark-mode .slds-context-bar__object-switcher,
+body.dark-mode .slds-context-bar__item--divider-right,
+body.dark-mode .slds-context-bar__icon-action,
+body.dark-mode .slds-context-bar__button,
+body.dark-mode .slds-icon-waffle_container,
+body.dark-mode .slds-icon-waffle,
+body.dark-mode .slds-r1,
+body.dark-mode .slds-r2,
+body.dark-mode .slds-r3,
+body.dark-mode .slds-r4,
+body.dark-mode .slds-r5,
+body.dark-mode .slds-r6,
+body.dark-mode .slds-r7,
+body.dark-mode .slds-r8,
+body.dark-mode .slds-r9,
+body.dark-mode .slds-context-bar__secondary,
+body.dark-mode .tabContainer,
+body.dark-mode .tabBar,
+body.dark-mode .tabItem,
+body.dark-mode .tabHeader,
+body.dark-mode .tabActionsList,
+body.dark-mode .overflowTrigger,
+body.dark-mode .overflowList,
+body.dark-mode .slds-card__header,
+body.dark-mode .slds-card__body,
+body.dark-mode .slds-card__footer,
+body.dark-mode .flowruntime-lwc-body, 
+body.dark-mode .slds-card__body,
+body.dark-mode .flowruntime-navigation-bar,
+body.dark-mode .slds-card__footer,
+body.dark-mode .slds-modal__container,
+body.dark-mode .tabsetHeader,
+body.dark-mode .slds-context-bar,
+body.dark-mode .slds-context-bar--tabs,
+body.dark-mode .slds-no-print, 
+body.dark-mode .slds-context-bar__item,
+body.dark-mode .slds-context-bar_dropdown-trigger,
+body.dark-mode .slds-dropdown-trigger,
+body.dark-mode .slds-dropdown-trigger--click,
+body.dark-mode .slds-no-hover,
+body.dark-mode .emptyListContent,
+body.dark-mode .flexipageComponent,
+body.dark-mode .slds-card__header,
+body.dark-mode .flowruntimeBody,
+body.dark-mode .flowruntimeBody__lwc,
+body.dark-mode .slds-card__body,
+body.dark-mode .slds-p-horizontal_small,
+body.dark-mode .dashboardHeader,
+body.dark-mode .slds-dashboards,
+body.dark-mode .dashGridItem,
+body.dark-mode .slds-card,
+body.dark-mode .container,
+body.dark-mode .slds-m-bottom_x-small,
+body.dark-mode .slds-form-element,
+body.dark-mode .slds-form-element__label,
+body.dark-mode .slds-rich-text-editor__output,
+body.dark-mode .slds-form-element__control,
+body.dark-mode .slds-input,
+body.dark-mode .slds-form-element__help,
+body.dark-mode .slds-page-header__meta-text,
+body.dark-mode .slds-page-header__col-meta,
+body.dark-mode .dashboardHeader, 
+body.dark-mode .slds-icon-standard-dashboard,
+body.dark-mode .widgetContainer,
+body.dark-mode .widgetContainer__lwc,
+body.dark-mode .widgetgrid,
+body.dark-mode .slds-card-flowRuntimeForFlexipage,
+body.dark-mode .flexipageComponent,
+body.dark-mode .widget-active-widget,
+body.dark-mode .widget,
+body.dark-mode .active-widget {
+
+    background: rgb(20, 20, 20) !important;
+    color: #fff !important;
+}
+
+body.dark-mode .tabHeader {
+    background: rgb(20, 20, 20) !important;
+    color: #fff !important;
+}
+
+body.dark-mode .overflowList {
+    background: rgb(20, 20, 20) !important;
+    color: #fff !important;
+}
+
+
+
+body.dark-mode .slds-card__header,
+body.dark-mode .slds-card__body,
+body.dark-mode .slds-card__footer,
+body.dark-mode .flowruntime-lwc-body .slds-card__body,
+body.dark-mode .flowruntime-navigation-bar .slds-card__footer {
+    background: rgb(20, 20, 20) !important;
+    color: #fff !important;
+}
+
+body.dark-mode .slds-modal__container,
+body.dark-mode .slds-modal__header,
+body.dark-mode .slds-modal__content,
+body.dark-mode .slds-modal__footer {
+    background: rgb(20, 20, 20) !important;
+    color: #fff !important;
+}
+
+body.dark-mode .lightning-progress-bar .slds-progress-bar,
+body.dark-mode .lightning-progress-bar .slds-progress-bar__value {
+    background-color: #383838 !important;
+}
+
+body.dark-mode .lightning-progress-bar .slds-progress-bar__value {
+    background-color: #00467e !important;
+}
