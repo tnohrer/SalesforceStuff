@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <isExposed>true</isExposed>
+    <description>Created by: Tristan Nohrer: This is to be used in a screen flow to call icons from the salesforce design library.</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="iconName" type="String" label="Icon Name" description="See lightning-icon developer guide. Format as 'category:icon_name' ex: utility:activity. For more info google SLDS icon library" />
+            <property name="size" type="String" label="Size" description="See lightning-icon developer guide. Otherwise enter: small, medium, x-small, xx-small, large" />
+            <property name="alignment" type="String" label="Alignment" description="Enter: left, right, center" />
+            <property name="variant" type="String" label="Variant" description="See lightning-icon developer guide. Enter: inverse, success, error, warning" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
