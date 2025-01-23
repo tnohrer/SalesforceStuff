@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Data Category Usage">
+        <template if:true={data}>
+            <div style="height: 300px; padding: 10px;">
+                <lightning-datatable
+                    key-field="DataCategoryName"
+                    data={data}
+                    columns={columns}
+                    hide-checkbox-column="true">
+                </lightning-datatable>
+            </div>
+        </template>
+        <template if:true={error}>
+            <p>{error}</p>
+        </template>
+    </lightning-card>
+</template>
