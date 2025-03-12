@@ -1,0 +1,20 @@
+<template>
+    <div class="react-example-container">
+        <div class="slds-box slds-theme_default">
+            <div class="slds-text-heading_medium slds-m-bottom_medium">
+                React in LWC Demo
+            </div>
+            <template if:true={isLoading}>
+                <div class="slds-is-relative slds-m-bottom_small">
+                    <lightning-spinner alternative-text="Loading React" size="small"></lightning-spinner>
+                </div>
+            </template>
+            <template if:true={error}>
+                <div class="slds-text-color_error slds-m-bottom_small">
+                    Error: {error}
+                </div>
+            </template>
+            <div lwc:dom="manual" class="react-container"></div>
+        </div>
+    </div>
+</template>
